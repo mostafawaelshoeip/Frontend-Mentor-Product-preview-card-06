@@ -13,7 +13,7 @@
     />
 
     <title>Frontend Mentor | Product preview card component</title>
-    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
     <!-- Main content -->
@@ -21,8 +21,12 @@
       <!-- Product image -->
       <section class="product-img">
         <figure>
-          <img
+          <img class="desktop-img"
             src="./assets/images/image-product-desktop.jpg"
+            alt="Perfume-image"
+          />
+          <img class="mobile-img"
+            src="./assets/images/image-product-mobile.jpg"
             alt="Perfume-image"
           />
         </figure>
@@ -31,8 +35,8 @@
       <!-- Product information -->
       <section>
         <header>
-          <h1 class="f-f-bold">Gabrielle Essence Eau De Parfum</h1>
-          <h2>Perfume</h2>
+          <h1 class="f-f-bold main-heading">Gabrielle Essence Eau De Parfum</h1>
+          <h2 class="sub-heading">Perfume</h2>
         </header>
 
         <p>
@@ -40,8 +44,15 @@
           Polge, Perfumer-Creator for the House of CHANEL.
         </p>
 
-        <div class="prices"><span class="f-f-bold">$149.99</span><span>$169.99</span></div>
-        <div><button>Add to Cart</button></div>
+        <div class="prices">
+          <span class="f-f-bold"> $149.99</span><span><del> $169.99</del></span>
+        </div>
+        <div>
+          <button>
+            <img src="./assets/images/icon-cart.svg" alt="cart-icon-svg" />
+            Add to Cart
+          </button>
+        </div>
       </section>
     </main>
 
